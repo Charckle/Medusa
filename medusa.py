@@ -6,11 +6,11 @@ def about(systray):
     print("Medusa is a quick app launcher, which currently has not an implemented way to add program withought programing. Will do it in the future, if it comes to it.")
 
 def start_batch(batch_name): 
-    subprocess.call([batch_name])
+    subprocess.Popen([batch_name])
     
 #if the file requires the creation and reading of files, it will do it all in the medusa folder, beware!
 def start_python(script_path):
-    subprocess.call(["python", script_path])
+    subprocess.Popen(["python", script_path])
 
 def open_webpage(web_page):
     webbrowser.open(web_page, new=0, autoraise=True)
