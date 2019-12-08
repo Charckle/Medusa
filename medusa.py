@@ -23,7 +23,7 @@ def second_program(systray):
 
 menu_options = (("Run batch file", None, first_program),
                 ("Run python script", None, second_program),
-                ("Run webpage", None, lambda: open_webpage("http://www.google.com")),
+                ("Run webpage", None, lambda _: open_webpage("http://www.google.com")),
                 ("Submenu test", None, (('First item', "simon.ico", about),
                                         ('Second item', "simon.ico", about))),
                 ("About ", None, about),
